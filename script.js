@@ -27,11 +27,6 @@ function save(){
   localStorage.setItem('Marcado', JSON.stringify(nlwSetup.data))
 }
 
-// const data = {
-//   run: ["05-05", "01-01", "06-01"],
-//   journal: ["01-05", "07-01", "10-01"],
-// }
-
 const data = JSON.parse(localStorage.getItem('Marcado')) || {}
 nlwSetup.setData(data)
 nlwSetup.load()
